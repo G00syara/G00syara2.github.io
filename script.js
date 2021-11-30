@@ -354,7 +354,7 @@ function isDarkTheme_kontacts(){
   if(theme.getCookie("theme") == "dark") { add_theme_3_1(); }
 }
 function isDarkTheme_portfolio(){
-  if(theme.getCookie("theme") == "darkstyle.css") { add_theme_4_1(); }
+  if(theme.getCookie("theme") == "dark") { add_theme_4_1(); }
 }
 function isDarkTheme_resume(){
   if(theme.getCookie("theme") == "dark") { add_theme_5_1(); }
