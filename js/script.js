@@ -14,6 +14,7 @@ function tst() {
 
   }
   else{
+      setCookie("theme", "dark");
       theme.href = "css/style.css";
       logo.src = "images/kish.png"
       buttons.src = "images/moon.png"
@@ -33,6 +34,7 @@ function add_theme_1_1() {
 
 
     if (theme.getAttribute("href") == "css/style.css"){
+        setCookie("theme", "light");
         theme.href = "css/darkstyle.css";
         logo.src = "images/kishdark.png"
         buttons.src = "images/sun.png"
@@ -41,6 +43,7 @@ function add_theme_1_1() {
 
     }
     else{
+        setCookie("theme", "dark");
         theme.href = "css/style.css";
         logo.src = "images/kish.png"
         buttons.src = "images/moon.png"
@@ -62,6 +65,7 @@ function add_theme_2_1(){
 
 
   if (theme.getAttribute("href") == "css/style.css"){
+      setCookie("theme", "light");
       theme.href = "css/darkstyle.css";
       logo.src = "images/kishdark.png"
       buttons.src = "images/sun.png"
@@ -70,6 +74,7 @@ function add_theme_2_1(){
 
   }
   else{
+      setCookie("theme", "dark");
       theme.href = "css/style.css";
       logo.src = "images/kish.png"
       buttons.src = "images/moon.png"
@@ -91,6 +96,7 @@ function add_theme_3_1(){
 
 
   if (theme.getAttribute("href") == "css/style.css"){
+      setCookie("theme", "light");
       theme.href = "css/darkstyle.css";
       logo.src = "images/kishdark.png"
       buttons.src = "images/sun.png"
@@ -99,6 +105,7 @@ function add_theme_3_1(){
 
   }
   else{
+      setCookie("theme", "dark");
       theme.href = "css/style.css";
       logo.src = "images/kish.png"
       buttons.src = "images/moon.png"
@@ -121,6 +128,7 @@ function add_theme_4_1(){
 
 
   if (theme.getAttribute("href") == "css/style.css"){
+      setCookie("theme", "light");
       theme.href = "css/darkstyle.css";
       logo.src = "images/kishdark.png"
       buttons.src = "images/sun.png"
@@ -129,6 +137,7 @@ function add_theme_4_1(){
 
   }
   else{
+      setCookie("theme", "dark");
       theme.href = "css/style.css";
       logo.src = "images/kish.png"
       buttons.src = "images/moon.png"
@@ -151,6 +160,7 @@ function add_theme_5_1(){
 
 
   if (theme.getAttribute("href") == "css/style.css"){
+      setCookie("theme", "light");
       theme.href = "css/darkstyle.css";
       logo.src = "images/kishdark.png"
       buttons.src = "images/sun.png"
@@ -159,6 +169,7 @@ function add_theme_5_1(){
 
   }
   else{
+      setCookie("theme", "dark");
       theme.href = "css/style.css";
       logo.src = "images/kish.png"
       buttons.src = "images/moon.png"
