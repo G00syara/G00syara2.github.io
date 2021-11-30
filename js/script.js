@@ -347,19 +347,19 @@ function isTheme(){
 }
 
 function isDarkTheme_kompetetions(){
-  if(getCookie("theme") == "dark") { add_theme_1_1(); }
+  if(getCookie("href") == "darkstyle.css") { add_theme_1_1(); }
 }
 function isDarkTheme_main(){
-  if(getCookie("theme") == "dark") { add_theme_2_1(); }
+  if(getCookie("href") == "darkstyle.css") { add_theme_2_1(); }
 }
 function isDarkTheme_kontacts(){
-  if(getCookie("theme") == "dark") { add_theme_3_1(); }
+  if(getCookie("href") == "darkstyle.css") { add_theme_3_1(); }
 }
 function isDarkTheme_portfolio(){
-  if(getCookie("theme") == "dark") { add_theme_4_1(); }
+  if(getCookie("href") == "darkstyle.css") { add_theme_4_1(); }
 }
 function isDarkTheme_resume(){
-  if(getCookie("theme") == "dark") { add_theme_5_1(); }
+  if(getCookie("href") == "darkstyle.css") { add_theme_5_1(); }
 }
 /*document.addEventListener("DOMContentLoaded", function(event) {
 //when loading document
