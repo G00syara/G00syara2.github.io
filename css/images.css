@@ -90,3 +90,16 @@
     width: 1920px;
     height: 1080px;
 }
+.start{
+    height: 50px;
+    width: 160px;
+    font-size: 20px;
+    background: rgb(0, 17, 255);
+    
+}
+.stop{
+    height: 50px;
+    width: 160px;
+    font-size: 20px;
+    background: rgb(31, 0, 4);
+}
