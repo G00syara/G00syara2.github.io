@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" id="theme">
+    <script src="js/script.js"></script> 
+    
+</head>
+<body>
+    <header>
+            <a href="about_myself.html">
+                <img src="images/kish.png" alt="Горшок Жив" width="100" class = "logo" id="logo"></a>
+
+                <nav>
+                    <ul class = "nav_links">
+                        <li><b><a href="about_myself.html">О себе</a></b></li>
+                        <li> <b><a href="competence.html">Компетенции</a></b></li>
+                        <li> <b><a href="resume.html">Резюме</a></b></li>
+                        <li> <b><a href="portfolio.html">Портфолио</a></b></li>
+                        <li> <b><a href="contacts.html">Контакты</a></b></li>
+                    </ul>  
+                </nav>  
+                <button class ="button" onclick="tst()"><img src="images/moon.png" alt="Горшок Жив" width="50" class = "logo" id="buttons"></button>
+            </header>
+
+        <article class="kontacts_article">
+            <section id ="kontacts" class=" main-section ">
+                <div>
+                    <div>
+                        <div class="flex-row-div flex-row-div-between-center"> 
+                            <div class = "possition_1">
+                                <div class="links text_possition">
+                                    <h3>Ссылки на меня
+                                    </h3>
+                                    <a href="https://vk.com/prekrasniy__mir"><img src="images/vk.png" alt="vk" style="width:50px;height:50px;"></a>
+                                    <a href="https://www.instagram.com/alexand3r_u  "><img src="images/inst.png" alt="Instagramm" style="width:50px;height:50px;"></a>
+                                    <a href="https://facebook.com"><img src="images/facebook.png" alt="facebook" style="width:50px;height:50px;"></a>
+                                    <a href="https://www.twitch.tv/bratishkinoff/"><img src="images/twitch.png" alt="twitch" style="width:50px;height:50px;"></a>
+                                </div>
+                            </div>
+                            
+                            <div class = "possition_1">
+                                <div class="e-mail text_possition">
+                                    <h3>Типо почта:</h3>
+                                    <p class="Pochta">Pochta@rambler.ru</p>
+                                </div>
+                            </div>
+                            
+                            <div class = "possition_1">
+                                <div class="phone text_possition">
+                                    <h3>Типо телефона:</h3>
+                                    <p class = "Phone">8(800)-555-35-35 </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>            
+            </section>
+        <form action="javascript:reg()" method="GET" name="register" class = "contacts1" id = "form_id">
+        <div class = "contacts1">    
+            <h1>Вопросы?</h1>
+            <h2>Какие Вопросы? Ответы надо</h2>
+            <h3>Ответы сюда</h3>
+        </div>
+        <div class = "main_contact">
+        <div class = "wrapper_contacts">
+        <div class = "contacts2">
+        <p class = "questions">Как вам удобно получить ответ?</p>
+        <p><input type="radio" name="group1" id = "group1">По пейджеру</p>
+        <p><input type="radio" name="group1" id = "group2">Голубиной почтой</p>
+        <p><input type="radio" name="group1" id = "group3">Гонцом</p>  
+        </div>
+
+        <p class = "questions">Укажите тему вопроса</p>
+        <div class = "contacts2">
+        <select class = "contacts3" id = "contacts3" name = "theme">
+            <option value ="sel1">Спорт</option>
+            <option value ="sel2">Киберспорт</option>
+            <option value ="sel3">Шахматы</option>
+            <option value ="sel4">Не спорт</option>
+        </select>
+        </div>
+
+        <p class = "questions">Последний вопрос?</p>
+        <p><input type="checkbox" name="checkbox" id="checkbox1">Да</p>
+        <p><input type="checkbox" name="checkbox" id="checkbox2">Нет</p>
+        </div>
+        <div class= "wrapper_contacts2">            
+            <div>
+                <label for="name" class = "questions">Ваше имя:
+                    <p><input type="text" name="name" id="name"></p>
+                </label>
+            </div>        
+            <div>
+                <label for="email" class = "questions">Ваша почта:
+                    <p><input type="text" name="email" id="email"></p>
+                </label>
+            </div>
+            <div>
+                <label for="phone" class = "questions">Ваш телефон:
+                    <p><input type="text" name="phone" id="phone"></p>
+                </label>
+            </div>       
+            <label for="message" class="questions">Ваш вопрос сюда:
+                <p><textarea type="text" name="message" id="message" cols="30" rows="5"></textarea></p>
+            </label>
+            </div>
+            <div class = "button_kontacts">
+                <input type="button" value="Отослать" onclick="reg()">
+            </div>
+            <div id = "render_register"></div>
+        </form> 
+
+        </article>
+ 
+    <footer>
+        <p class = "footer_image">
+            <a href="https://www.twitch.tv/bratishkinoff/"><img src="images/twitch.png" alt="twitch" width="30"></a>
+            <a href="https://vk.com/2c_unidubna"><img src="images/vk.png" alt="vk" width="30"></a>
+            <a href="https://www.instagram.com/alexand3r_u/"><img src="images/inst.png" alt="Instagramm" width="30"></a>
+            <a href="https://facebook.com"><img src="images/facebook.png" alt="facebook" width="30"></a>
+        </p>
+        <h4 class = "footer-h4"><p>Руководитель проекта и идейный вдохновитель Александр Угаров</p>
+        <p>Copyright © 2021-...</p></h4>
+    </footer>
+</body>
+</html>
