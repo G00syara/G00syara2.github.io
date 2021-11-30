@@ -307,6 +307,126 @@ function addClass(element, className) {
   classes.push(className);
   element.className = classes.join(' ');
 }
+/////////////////////////////
+var timer;
+function GalleryInterval(){
+    var TT = document.getElementById("Timer");
+    if(TT.classList.contains("stop")){
+        setCookie("gallery", "start");
+        clearInterval(timer);
+        TT.classList.remove("stop");
+        TT.classList.add("start");
+    }
+    else if(TT.classList.contains("start")){
+        setCookie("gallery", "stop");
+        TT.classList.remove("start");
+        TT.classList.add("stop");
+        timer = setInterval(function() {
+            var current = document.querySelector('.images .image.active');
+            var next = current.nextElementSibling;
+            
+            if (!next) {
+                next = document.querySelector('.images .image:first-child');
+            }
+            
+            removeClass(current, 'active');
+            addClass(next, 'active');
+        }, 7000);
+    }
+}
+
+
+
+function Gallery_min(){
+    deleteCookie("gallery_size");
+    setCookie("gallery_size", "min");
+    var TT = document.getElementById('images_size');
+    if (!(TT.classList.contains('img_min'))){
+        TT.classList.add('img_min');
+    }
+    if(TT.classList.contains('img_average')){
+        TT.classList.remove('img_average');
+    }
+    if(TT.classList.contains('img_max')){
+        TT.classList.remove('img_max');
+    }
+
+    var TT1 = document.getElementById("left");
+    var TT2 = document.getElementById("right");
+    if(!(TT1.classList.contains("buttons_main_min"))){
+        TT1.classList.add("buttons_main_min");
+        TT2.classList.add("buttons_main_min");
+    }
+    if(TT1.classList.contains("buttons_main_average")){
+        TT1.classList.remove("buttons_main_average");
+        TT2.classList.remove("buttons_main_average");
+    }
+    if(TT1.classList.contains("buttons_main_max")){
+        TT1.classList.remove("buttons_main_max");
+        TT2.classList.remove("buttons_main_max");
+    }
+
+}
+
+function Gallery_average(){
+    deleteCookie("gallery_size");
+    setCookie("gallery_size", "average");
+    var TT = document.getElementById('images_size');
+    if (!(TT.classList.contains("img_average"))){
+        TT.classList.add('img_average');
+    }
+    if(TT.classList.contains('img_min')){
+        TT.classList.remove('img_min');
+    }
+    if(TT.classList.contains('img_max')){
+        TT.classList.remove('img_max');
+    }
+
+    var TT1 = document.getElementById("left");
+    var TT2 = document.getElementById("right");
+    if(!(TT1.classList.contains("buttons_main_average"))){
+        TT1.classList.add("buttons_main_average");
+        TT2.classList.add("buttons_main_average");
+    }
+    if(TT1.classList.contains("buttons_main_min")){
+        TT1.classList.remove("buttons_main_min");
+        TT2.classList.remove("buttons_main_min");
+    }
+    if(TT1.classList.contains("buttons_main_max")){
+        TT1.classList.remove("buttons_main_max");
+        TT2.classList.remove("buttons_main_max");
+    }
+}
+
+function Gallery_max(){
+    deleteCookie("gallery_size");
+    setCookie("gallery_size", "max");
+    var TT = document.getElementById('images_size');
+    if (!(TT.classList.contains('img_max'))){
+        TT.classList.add('img_max');
+    }
+    if(TT.classList.contains('img_average')){
+        TT.classList.remove('img_average');
+    }
+    if(TT.classList.contains('img_min')){
+        TT.classList.remove('img_min');
+    }
+
+    var TT1 = document.getElementById("left");
+    var TT2 = document.getElementById("right");
+    if(!(TT1.classList.contains("buttons_main_max"))){
+        TT1.classList.add("buttons_main_max");
+        TT2.classList.add("buttons_main_max");
+    }
+    if(TT1.classList.contains("buttons_main_average")){
+        TT1.classList.remove("buttons_main_average");
+        TT2.classList.remove("buttons_main_average");
+    }
+    if(TT1.classList.contains("buttons_main_max")){
+        TT1.classList.remove("buttons_main_min");
+        TT2.classList.remove("buttons_main_min");
+    }
+}
 
 /////////////////////////
 function getCookie(cookie_name)

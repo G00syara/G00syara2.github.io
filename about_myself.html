@@ -61,6 +61,20 @@
                     <button class = "buttons_main_min" onclick="right();" id = "right"> ⮚ </button>
                 </div>                
             </div>
+            <div class = "all-photo flex-container">
+                <div style="padding-top: 5px;">
+                    Размер галереи:
+                </div>
+                <div style="padding-top: 5px;">
+                    <input type="radio" name="gallery_size" id="gallery_size1" onclick = "Gallery_min()">Маленький
+                    <input type="radio" name="gallery_size" id="gallery_size2" onclick = "Gallery_average()">Средний
+                    <input type="radio" name="gallery_size" id="gallery_size3" onclick = "Gallery_max()">Большой
+                </div>
+                <div style="font-size: 35px; padding-left: 50px;">|</div>
+                <div style="padding-left: 50px;">
+                    <button class = "start" id = "Timer" onclick="GalleryInterval()">Старт/Стоп</button>
+                </div>
+            </div>
         </section>
         
     
