@@ -34,7 +34,7 @@ function add_theme_1_1() {
 
 
     if (theme.getAttribute("href") == "css/style.css"){
-        setCookie("theme", "light");
+        setCookie("theme_", "light");
         theme.href = "css/darkstyle.css";
         logo.src = "images/kishdark.png"
         buttons.src = "images/sun.png"
@@ -43,7 +43,7 @@ function add_theme_1_1() {
 
     }
     else{
-        setCookie("theme", "dark");
+        setCookie("theme_", "dark");
         theme.href = "css/style.css";
         logo.src = "images/kish.png"
         buttons.src = "images/moon.png"
@@ -65,7 +65,7 @@ function add_theme_2_1(){
 
 
   if (theme.getAttribute("href") == "css/style.css"){
-      setCookie("theme", "light");
+      setCookie("theme_", "light");
       theme.href = "css/darkstyle.css";
       logo.src = "images/kishdark.png"
       buttons.src = "images/sun.png"
@@ -74,7 +74,7 @@ function add_theme_2_1(){
 
   }
   else{
-      setCookie("theme", "dark");
+      setCookie("theme_", "dark");
       theme.href = "css/style.css";
       logo.src = "images/kish.png"
       buttons.src = "images/moon.png"
@@ -96,7 +96,7 @@ function add_theme_3_1(){
 
 
   if (theme.getAttribute("href") == "css/style.css"){
-      setCookie("theme", "light");
+      setCookie("theme_", "light");
       theme.href = "css/darkstyle.css";
       logo.src = "images/kishdark.png"
       buttons.src = "images/sun.png"
@@ -105,7 +105,7 @@ function add_theme_3_1(){
 
   }
   else{
-      setCookie("theme", "dark");
+      setCookie("theme_", "dark");
       theme.href = "css/style.css";
       logo.src = "images/kish.png"
       buttons.src = "images/moon.png"
@@ -128,7 +128,7 @@ function add_theme_4_1(){
 
 
   if (theme.getAttribute("href") == "css/style.css"){
-      setCookie("theme", "light");
+      setCookie("theme_", "light");
       theme.href = "css/darkstyle.css";
       logo.src = "images/kishdark.png"
       buttons.src = "images/sun.png"
@@ -137,7 +137,7 @@ function add_theme_4_1(){
 
   }
   else{
-      setCookie("theme", "dark");
+      setCookie("theme_", "dark");
       theme.href = "css/style.css";
       logo.src = "images/kish.png"
       buttons.src = "images/moon.png"
@@ -160,7 +160,7 @@ function add_theme_5_1(){
 
 
   if (theme.getAttribute("href") == "css/style.css"){
-      setCookie("theme", "light");
+      setCookie("theme_", "light");
       theme.href = "css/darkstyle.css";
       logo.src = "images/kishdark.png"
       buttons.src = "images/sun.png"
@@ -169,7 +169,7 @@ function add_theme_5_1(){
 
   }
   else{
-      setCookie("theme", "dark");
+      setCookie("theme_", "dark");
       theme.href = "css/style.css";
       logo.src = "images/kish.png"
       buttons.src = "images/moon.png"
@@ -490,28 +490,28 @@ function isButtonShow(){
 
 function isTheme(){
   //if(getCookie("theme") == "light") { setCookie("theme", "dark"); }
-  if(getCookie("theme") == "dark") 
+  if(getCookie("theme_") == "dark") 
   { 
-    deleteCookie("theme");
-    setCookie("theme", "light"); 
+    deleteCookie("theme_");
+    setCookie("theme_", "light"); 
   }
-  else { setCookie("theme", "dark"); }
+  else { setCookie("theme_", "dark"); }
 }
 
 function isDarkTheme_kompetetions(){
-  if(theme.getCookie("theme") == "dark") { add_theme_1_1(); }
+  if(theme.getCookie("theme_") == "dark") { add_theme_1_1(); }
 }
 function isDarkTheme_main(){
-  if(theme.getCookie("theme") == "dark") { add_theme_2_1(); }
+  if(theme.getCookie("theme_") == "dark") { add_theme_2_1(); }
 }
 function isDarkTheme_kontacts(){
-  if(theme.getCookie("theme") == "dark") { add_theme_3_1(); }
+  if(theme.getCookie("theme_") == "dark") { add_theme_3_1(); }
 }
 function isDarkTheme_portfolio(){
-  if(theme.getCookie("theme") == "dark") { add_theme_4_1(); }
+  if(theme.getCookie("theme_") == "dark") { add_theme_4_1(); }
 }
 function isDarkTheme_resume(){
-  if(theme.getCookie("theme") == "dark") { add_theme_5_1(); }
+  if(theme.getCookie("theme_") == "dark") { add_theme_5_1(); }
 }
 /*document.addEventListener("DOMContentLoaded", function(event) {
 //when loading document
