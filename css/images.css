@@ -67,8 +67,8 @@
     background: rgb(172, 55, 8);
 }
 .img_min{
-    width: 1280px;
-    height: 720px;
+    width: 480px;
+    height: 300px;
 }
 .buttons_main_average{
     height: 900px;
@@ -77,8 +77,8 @@
     background: rgb(172, 55, 8);
 }
 .img_average{
-    width: 1600px;
-    height: 900px;
+    width: 800px;
+    height: 600px;
 }
 .buttons_main_max{
     height: 1080px;
@@ -87,8 +87,8 @@
     background: rgb(172, 55, 8);
 }
 .img_max{
-    width: 1920px;
-    height: 1080px;
+    width: 1280px;
+    height: 720px;
 }
 .start{
     height: 50px;
