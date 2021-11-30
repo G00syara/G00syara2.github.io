@@ -336,30 +336,28 @@ function isButtonShow(){
 
 function isTheme(){
   //if(getCookie("theme") == "light") { setCookie("theme", "dark"); }
-  //if(getCookie("theme") == "dark") 
-  let theme = document.getElementById("theme");
-  if(theme.getCookie("href") == "darkstyle.css") 
+  if(getCookie("theme") == "dark") 
   { 
-    deleteCookie("href");
-    theme.setCookie("href", "style.css"); 
+    deleteCookie("theme");
+    setCookie("theme", "light"); 
   }
-  else {theme.setCookie("href", "darkstyle.css"); }
+  else { setCookie("theme", "dark"); }
 }
 
 function isDarkTheme_kompetetions(){
-  if(theme.getCookie("href") == "darkstyle.css") { add_theme_1_1(); }
+  if(theme.getCookie("theme") == "dark") { add_theme_1_1(); }
 }
 function isDarkTheme_main(){
-  if(theme.getCookie("href") == "darkstyle.css") { add_theme_2_1(); }
+  if(theme.getCookie("theme") == "dark") { add_theme_2_1(); }
 }
 function isDarkTheme_kontacts(){
-  if(theme.getCookie("href") == "darkstyle.css") { add_theme_3_1(); }
+  if(theme.getCookie("theme") == "dark") { add_theme_3_1(); }
 }
 function isDarkTheme_portfolio(){
-  if(theme.getCookie("href") == "darkstyle.css") { add_theme_4_1(); }
+  if(theme.getCookie("theme") == "darkstyle.css") { add_theme_4_1(); }
 }
 function isDarkTheme_resume(){
-  if(theme.getCookie("href") == "darkstyle.css") { add_theme_5_1(); }
+  if(theme.getCookie("theme") == "dark") { add_theme_5_1(); }
 }
 /*document.addEventListener("DOMContentLoaded", function(event) {
 //when loading document
