@@ -34,7 +34,7 @@ function add_theme_1_1() {
 
 
     if (theme.getAttribute("href") == "css/style.css"){
-        setCookie("theme_", "light");
+        //setCookie("theme_", "light");
         theme.href = "css/darkstyle.css";
         logo.src = "images/kishdark.png"
         buttons.src = "images/sun.png"
@@ -43,7 +43,7 @@ function add_theme_1_1() {
 
     }
     else{
-        setCookie("theme_", "dark");
+        //setCookie("theme_", "dark");
         theme.href = "css/style.css";
         logo.src = "images/kish.png"
         buttons.src = "images/moon.png"
@@ -65,7 +65,7 @@ function add_theme_2_1(){
 
 
   if (theme.getAttribute("href") == "css/style.css"){
-      setCookie("theme_", "light");
+      //setCookie("theme_", "light");
       theme.href = "css/darkstyle.css";
       logo.src = "images/kishdark.png"
       buttons.src = "images/sun.png"
@@ -74,7 +74,7 @@ function add_theme_2_1(){
 
   }
   else{
-      setCookie("theme_", "dark");
+      //setCookie("theme_", "dark");
       theme.href = "css/style.css";
       logo.src = "images/kish.png"
       buttons.src = "images/moon.png"
@@ -96,7 +96,7 @@ function add_theme_3_1(){
 
 
   if (theme.getAttribute("href") == "css/style.css"){
-      setCookie("theme_", "light");
+      //setCookie("theme_", "light");
       theme.href = "css/darkstyle.css";
       logo.src = "images/kishdark.png"
       buttons.src = "images/sun.png"
@@ -105,7 +105,7 @@ function add_theme_3_1(){
 
   }
   else{
-      setCookie("theme_", "dark");
+      //setCookie("theme_", "dark");
       theme.href = "css/style.css";
       logo.src = "images/kish.png"
       buttons.src = "images/moon.png"
@@ -128,7 +128,7 @@ function add_theme_4_1(){
 
 
   if (theme.getAttribute("href") == "css/style.css"){
-      setCookie("theme_", "light");
+      //setCookie("theme_", "light");
       theme.href = "css/darkstyle.css";
       logo.src = "images/kishdark.png"
       buttons.src = "images/sun.png"
@@ -137,7 +137,7 @@ function add_theme_4_1(){
 
   }
   else{
-      setCookie("theme_", "dark");
+      //setCookie("theme_", "dark");
       theme.href = "css/style.css";
       logo.src = "images/kish.png"
       buttons.src = "images/moon.png"
@@ -160,7 +160,7 @@ function add_theme_5_1(){
 
 
   if (theme.getAttribute("href") == "css/style.css"){
-      setCookie("theme_", "light");
+      //setCookie("theme_", "light");
       theme.href = "css/darkstyle.css";
       logo.src = "images/kishdark.png"
       buttons.src = "images/sun.png"
@@ -169,7 +169,7 @@ function add_theme_5_1(){
 
   }
   else{
-      setCookie("theme_", "dark");
+      //setCookie("theme_", "dark");
       theme.href = "css/style.css";
       logo.src = "images/kish.png"
       buttons.src = "images/moon.png"
@@ -445,14 +445,17 @@ function getCookie(cookie_name)
   var results = document.cookie.match ( '(^|;) ?' + cookie_name + '=([^;]*)(;|$)' );
  
   if ( results )
+  {
+    console.log(results[2])
     return ( unescape ( results[2] ) );
+  }
   else
     return null;
 }
 
 function setCookie( name, value, exp_y, exp_m, exp_d, path, domain, secure )
 {
-  var cookie_string = name + "=" + escape ( value );
+  var cookie_string = name + "=" + escape (value);
  
   if ( exp_y )
   {
@@ -460,27 +463,27 @@ function setCookie( name, value, exp_y, exp_m, exp_d, path, domain, secure )
     cookie_string += "; expires=" + expires.toGMTString();
   }
  
-  if ( path )
+  if (path)
         cookie_string += "; path=" + escape ( path );
  
-  if ( domain )
+  if (domain)
         cookie_string += "; domain=" + escape ( domain );
   
-  if ( secure )
+  if (secure)
         cookie_string += "; secure";
   
   document.cookie = cookie_string;
-  console.log(document.cookie);
 }
 
-function deleteCookie(cookie_name)
+function deleteCookie(name)
 {
-  var cookie_date = new Date ( );  // Текущая дата и время
-  cookie_date.setTime ( cookie_date.getTime() - 1 );
-  document.cookie = cookie_name += "=; expires=" + cookie_date.toGMTString();
+  setCookie(name, "", {
+    'max-age:': -1
+  })
 }
 
 function isButtonShow(){
+  
   if(getCookie("block1_style") == "hide") { block1_hide(); }
   if(getCookie("block2_style") == "hide") { block2_hide(); }
   if(getCookie("block3_style") == "hide") { block3_hide(); }
