@@ -1,6 +1,4 @@
-# My project
-
-## With darkstyle 
+# My project with darkstyle 
 
 ![How_its_look](./design/1.PNG)
 ![How_its_look](./design/2.PNG)
