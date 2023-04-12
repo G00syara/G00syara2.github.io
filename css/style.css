@@ -5,28 +5,29 @@
   font-family: 'Source Sans Pro', serif;
 }
 
-::after, ::before {
+::after,
+::before {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-a:link, a:visited {
+a:link,
+a:visited {
   color: black;
 }
 
 header {
-  background-image: url(../images/shapka.jpg);
   text-shadow: black 2px 2px 4px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -34,7 +35,8 @@ header {
   height: 30px;
 }
 
-li, a {
+li,
+a {
   text-decoration: none;
   font-weight: 1200px;
   font-size: 16px;
@@ -73,16 +75,15 @@ body {
 
 article {
   padding: 20px;
-  min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .container {
@@ -91,17 +92,17 @@ article {
   margin: 0 auto;
   padding: 0 15px;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .second_container {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 7fr;
-      grid-template-columns: 1fr 7fr;
+  grid-template-columns: 1fr 7fr;
   -ms-grid-rows: auto;
-      grid-template-rows: auto;
+  grid-template-rows: auto;
   grid-gap: 20px;
 }
 
@@ -111,11 +112,11 @@ article {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   border-radius: 75%;
   /* Радиус скругления */
   border-color: black;
@@ -133,11 +134,11 @@ article {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: auto;
-      -ms-flex-pack: auto;
-          justify-content: auto;
+  -ms-flex-pack: auto;
+  justify-content: auto;
   border-radius: 15px;
   border-color: black;
   border-style: solid;
@@ -169,7 +170,8 @@ article {
   color: blue;
 }
 
-.Hard_skills li, .Soft_skills li {
+.Hard_skills li,
+.Soft_skills li {
   list-style-type: circle;
 }
 
@@ -187,10 +189,10 @@ article {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -ms-grid-rows: auto;
-        grid-template-rows: auto;
+    grid-template-rows: auto;
     grid-gap: 20px;
   }
 }
@@ -208,10 +210,10 @@ article {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -ms-grid-rows: auto;
-        grid-template-rows: auto;
+    grid-template-rows: auto;
     grid-gap: 20px;
   }
 }
